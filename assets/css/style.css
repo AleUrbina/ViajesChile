@@ -1,15 +1,25 @@
 body {
     color: white;
     background-color:black;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
 
 .logo_viajes {
-    width: 30px;
+    width: 33px;
 
 }
 
 .barra-navegacion {
     color: white;
+}
+
+.card-img-top {
+    height: 10rem;
+}
+
+.fontawesome {
+    font-size: 2rem;
+
 }
