@@ -1,10 +1,14 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+
 body {
     color: white;
     background-color:black;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
-
-
 
 .logo_viajes {
     width: 33px;

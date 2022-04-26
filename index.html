@@ -14,10 +14,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!--Google Fonts PONER TEXTO-->
-<!--Google Fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
   <!--CDN jquery-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -45,13 +45,14 @@
           <div class="carousel-item">
             <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
           </div>
-
           <div>
+
+            <!--NAVBAR-->
             <nav class="navbar navbar-expand-lg navbar-light barra-navegacion ">
               <div class="container-fluid">
-                <div class="ms-5">
+                <div class="ms-5 py-3 light">
                   <p> <img src="assets/img/viajes.svg" alt="" class="logo_viajes">
-                    <a class="navbar-brand" href="#">Viajes Chile</a>
+                    <a class="navbar-brand " href="#">Viajes Chile</a>
                   </p>
                 </div>
 
@@ -63,15 +64,16 @@
                 <div class="collapse navbar-collapse justify-content-end justify-content-end" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    <a class="nav-link" href="#quienessomos">Quiénes somos</a>
-                    <a class="nav-link" href="#destacados">Destacados</a>
-                    <a class="nav-link disabled" href="#contacto">Contacto</a>
+                    <a class="nav-link" href="#seccion-1">Quiénes somos</a>
+                    <a class="nav-link" href="#seccion-2">Destacados</a>
+                    <a class="nav-link disabled" href="#seccion-3">Contacto</a>
                   </div>
                 </div>
               </div>
             </nav>
-          </div>
 
+            <!--FIN NAVBAR-->
+          </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
           data-bs-slide="prev">
@@ -90,7 +92,7 @@
   </header>
 
   <!--¿QUIENES SOMOS?-->
-  <section id="quienessomos">
+  <section id="seccion-1" class="d-none d-sm-none d-md-block">
 
     <h2 class="text-center py-5">¿QUIÉNES SOMOS?</h2>
 
@@ -100,17 +102,23 @@
 
         <div class="col-4 ">
           <p class="bg-info px-4 text-center fontawesome"> <i class="fa-solid fa-plane-up"></i> </p>
-          <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+          <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. </p>
         </div>
 
         <div class="col-4 ">
-          <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+          <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. </p>
           <p class="bg-info px-4 text-center fontawesome"> <i class="fa-solid fa-square-caret-up"></i> </p>
         </div>
 
         <div class="col-4 ">
           <p class="bg-info px-4 text-center fontawesome"> <i class="fa-solid fa-route"></i> </p>
-          <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+          <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. </p>
         </div>
 
 
@@ -121,7 +129,7 @@
   </section>
 
   <!--DESTACADOS-->
-  <section id="destacados">
+  <section id="seccion-2">
 
     <h2 class="text-center py-5">DESTACADOS</h2>
 
@@ -176,7 +184,7 @@
 
   <!--CONTACTO-->
 
-  <section id="contacto" class="pt-5">
+  <section id="seccion-3" class="pt-5">
 
     <h2 class="text-center py-5">CONTACTO</h2>
     <div class="container fluid my-4 ">
@@ -196,7 +204,7 @@
         </div>
     </div>
     <div class="text-center mb-3 py-2">
-      <button class="btn btn-light btn-lg px-4">Enviar</button>
+      <button class="btn btn-light btn-lg px-4" class="btn btn-secondary" id="enviarcorreo" data-bs-toggle="tooltip" data-bs-placement="top" title="Nos comunicaremos contigo a la brevedad">Enviar</button>
     </div>
     </form>
   </section>
@@ -211,7 +219,8 @@
 
         <div class="col-8">
           <p class="fontawesome text-end">
-            <i class="fa-brands fa-github"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-github"></i> <i class="fa-brands fa-linkedin"></i> <i
+              class="fa-brands fa-twitter"></i> <i class="fa-brands fa-facebook"></i>
 
           </p>
         </div>
@@ -221,6 +230,7 @@
 
     </div>
   </footer>
+  
 
   <!-- scripts bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js "
@@ -229,6 +239,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js "
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF "
     crossorigin="anonymous"></script>
+
+  
+  <!--JQUERY-->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!--JSCRIPT-->
+  <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
